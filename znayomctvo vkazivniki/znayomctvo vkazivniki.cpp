@@ -34,6 +34,17 @@ int main()
 
 
     //n3
+    const int size = 5;
+    int array[size] = { 1,2,3,4,5 };
+    int insertar[size];
+    int* end = array + size - 1;
+    for (int i = 0; i < size; i++) {
+        *(insertar + i) = *(end - i);
+    }
+    for (int i = 0; i < size; i++) {
+        cout << insertar[i] << " ";
+    }
 
+    return 0;
 }
 
